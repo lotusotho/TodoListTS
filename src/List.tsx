@@ -71,7 +71,9 @@ function UpdateArrayList(){
 function CreateListElement() {
     const lineFormat: string = `<tr><td>${listText.text}</td></tr>`;
 
-    if(listText.text.includes('<script>') || listText.text.includes('</script>')) {
+    if(listText.text.length > 44){
+        alert("Try something smaller...");
+    } else if(listText.text.includes('<script>') || listText.text.includes('</script>')) {
         alert("Yeaaaah, that's not going to work...");
     } else {
         textArr.push(lineFormat);
