@@ -13,14 +13,14 @@ export function List() {
     return (
         <>
             <form action="" onSubmit={handleSumbit}>
-                <input type="text" name="123" id="textInput" />
-                <button>Add line</button>
+                <input type="text" name="123" id="textInput" className="input-text-field-form"/>
+                <button className="btn-default">Add line</button>
                 <br />
             </form>
             <form action="" onSubmit={DeleteListElementButton}>
                 <CreateStructureList/>
                 <aside>
-                    <button className="button-deleteList">Delete line</button>
+                    <button className="btn-default" id="btnDeleteLine" hidden>Delete line</button>
                     <br />
                     <br />
                 </aside>
@@ -65,7 +65,14 @@ function CreateStructureList() {
 function UpdateArrayList(){
     DOMPurify.sanitize(document.getElementById("textList")!.innerHTML = textArr.join().replace(/,/gm, '') + '\n');
 
-    textArr.length === 0 ? document.getElementById("wholeList")!.hidden = true : document.getElementById("wholeList")!.hidden = false;
+    if(textArr.length === 0){
+        document.getElementById("wholeList")!.hidden = true;
+        document.getElementById('btnDeleteLine')!.hidden = true;
+    } else {
+        document.getElementById("wholeList")!.hidden = false;
+        document.getElementById('btnDeleteLine')!.hidden = false;
+    }
+
 }
 
 function CreateListElement() {
