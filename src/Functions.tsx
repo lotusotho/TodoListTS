@@ -2,7 +2,7 @@ import * as React from "react";
 import { IList } from "./Interfaces";
 import DOMPurify from 'dompurify';
 
-const textArr: string[] = [];
+let textArr: string[] =  [''];
 
 const listText: IList = {
     text: ''
@@ -53,7 +53,7 @@ function UpdateArrayList(){
     }
 
 }
-
+// localStorage['textArr']
 function CreateListElement() {
     const lineFormat: string = `<tr><td>${listText.text}</td></tr>`;
 
@@ -63,8 +63,9 @@ function CreateListElement() {
         alert("Yeaaaah, that's not going to work...");
     } else {
         textArr.push(lineFormat);
+        UpdateToCache(textArr);
     }
-
+    
     UpdateArrayList();
 }
 
@@ -73,8 +74,13 @@ export function DeleteListElementButton(event: React.SyntheticEvent<HTMLFormElem
     DeleteListElement();
 }
 
+function UpdateToCache(value: string[]) {
+    localStorage['textArr'] === value;
+}
+
 function DeleteListElement(){
     textArr.pop();
+    UpdateToCache(textArr);
     
     UpdateArrayList();
 }
