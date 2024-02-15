@@ -20,7 +20,7 @@ export function List() {
             <form action="" onSubmit={DeleteListElementButton}>
                 <CreateStructureList/>
                 <aside>
-                    <button className="btn-default" id="btnDeleteLine" hidden>Delete line</button>
+                    <button className="btn-default-delete" id="btnDeleteLine" hidden>Delete line</button>
                     <br />
                     <br />
                 </aside>

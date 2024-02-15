@@ -48,16 +48,24 @@
         padding-inline-start: 10px;
         padding-inline-end: 10px;
         padding-top: 20px;
+        margin-bottom: 3%;
     }
-
+    
     .input-text-field-form {
         font-size: x-large;
         font-family: system-ui;
         font-weight: light;
     }
-
+    
     .btn-default {
         border-radius: 30px;
+        border: 0;
+    }
+    
+    .btn-default-delete {
+        border-radius: 30px;
+        background-color: #D93526;
+        border: 0;
     }
 }
 
@@ -71,21 +79,21 @@
         border-radius: 10px;
         color: #303446;
     }
-
+    
     .caption-title-bluePhrase {
         color: #364baa;
     }
-
+    
     .mainContainer {
         margin: 5% auto;
         width: 40em;
         text-align: center;
     }
-
+    
     .textBox:hover {
         border-color: #ef9f76;
     }
-
+    
     .dataRow>tr>td {
         color: white;
         text-align: center;
@@ -106,7 +114,7 @@
     .dataRow>tr>td:hover::selection {
         background-color: #707aff;
     }
-
+    
     .list-container-frame {
         margin-top: 2%;
         background-color: #8caaee;
@@ -116,8 +124,9 @@
         padding-inline-start: 10px;
         padding-inline-end: 10px;
         padding-top: 20px;
+        margin-bottom: 3%;
     }
-
+    
     .input-text-field-form {
         font-size: x-large;
         font-family: system-ui;
@@ -126,5 +135,12 @@
 
     .btn-default {
         border-radius: 30px;
+        border: 0;
+    }
+
+    .btn-default-delete {
+        border-radius: 30px;
+        background-color: #D93526;
+        border: 0;
     }
 }
