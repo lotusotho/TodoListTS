@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# Small Todo List made with React, Typescript and PicoCSS 📋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple todo list I made for practicing programing with typescript and React 🤓⚛️
 
-Currently, two official plugins are available:
+This project uses Vite + SWC for compiling/bundling files.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## If you want to run it on your device:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
+### To install packages:
 ```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### If you want to run a developer instance:
+```js
+npm run dev
+```
+
+## Check the command npm run to see all options:
+```js
+dev
+    vite
+build
+    tsc && vite build
+lint
+    eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0
+preview
+    vite preview
+```
