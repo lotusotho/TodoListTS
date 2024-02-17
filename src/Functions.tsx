@@ -2,7 +2,7 @@ import * as React from "react";
 import { IList } from "./Interfaces";
 import DOMPurify from 'dompurify';
 
-let textArr: string[] =  [''];
+let textArr: string[] =  [];
 
 const listText: IList = {
     text: ''
@@ -64,9 +64,8 @@ function CreateListElement() {
     } else {
         textArr.push(lineFormat);
         UpdateToCache(textArr);
+        UpdateArrayList();
     }
-    
-    UpdateArrayList();
 }
 
 export function DeleteListElementButton(event: React.SyntheticEvent<HTMLFormElement>) {
