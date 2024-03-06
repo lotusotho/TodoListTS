@@ -5,14 +5,7 @@ A simple todo list I made for practicing programing with typescript and React ðŸ
 This project uses Vite + SWC for compiling/bundling files.
 
 
-## If you want to run it on your device:
-
-### To install packages:
-```js
-npm i
-```
-
-### If you want to run a developer instance:
+## If you want to run a developer instance:
 ```js
 npm run dev
 ```
